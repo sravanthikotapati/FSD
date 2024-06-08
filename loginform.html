@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Login form</title>
+		<link rel="stylesheet" type="text/css" href="./login.css">
+		<script>  
+				function validate()  
+				{  
+				var x=document.myform.email.value;  
+				var password=document.myform.password.value; 
+				var flag=0;
+				if (x=="null" || x==""){  
+					alert("Name can't be blank"); 
+					document.myform.email.focus();
+					return false;  
+				}
+				var atposition=x.indexOf("@");  
+				var dotposition=x.lastIndexOf(".");  
+				if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+				{  
+				  alert("Please enter a valid e-mail \n email contains @ and .");  
+				  return false;  
+				  }  
+				if( password.length<6 || password.length>15){  
+					alert("Password must be at least 6-15characters long .");  
+					document.myform.password.focus();
+					return false;  
+				}  
+				alert("Registration successfull");
+				return true;
+				}  
+</script>  
+
+	</head>
+	<body>
+		<div class="Login-page">
+			<h1>Login Form</h1>
+			<form name="myform"  method="post" action="#"  onsubmit="return validate();" >
+				<p>User Name</p>
+				<input type="text" name="email" class="box"  placeholder="enter your email" >
+				<p>Password</p>
+				<input type="password" name="password" class="box" placeholder="enter your password">
+				<button type="submit">Login</button>
+				<p>forget password<a href="#">click here</a></p>
+			</form>
+		</div>
+	</body>
+</html>
