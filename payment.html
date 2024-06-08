@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Check out</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        h1{
+            text-align: center;
+            color: Black;
+        }
+        
+        .payment{
+            align-content: center;
+            width:30%;
+            background-color: pink;
+            padding:25px 15px 25px 15px;
+            border-radius: 8px;
+            font-family: 'Confortaa', cursive;
+        }
+        .billing{
+            align-content: center;
+            width:30%;
+            background-color: pink;
+            padding:25px 15px 25px 15px;   
+            border-radius: 8px;
+            backdrop-filter: 50px;
+            font-family: 'Confortaa', cursive;
+        }
+        
+        input[type=number] {
+            background-color: #558599;
+            width: 100%;
+            padding: 5px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid #f1f9fc;
+          }
+          input[type=text] {
+            background-color: #558599;
+            width: 100%;
+            padding: 5px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid #f1f9fc;
+          }
+          .date input[type=number]{
+              width:40%;
+          }
+          .icon-container {
+            margin-bottom: 10px;
+            padding: 0px 0;
+            font-size: 24px;
+          }
+         .payment input[type=checkbox]{
+              margin-left: 30px;
+          }
+          button{
+              padding: 8px 8px 8px 8px;
+              color: #f1f9fc(243, 230, 230);
+              background-color: #e0eeef;
+              font-family: 'Confortaa', cursive;
+              font-weight: bold;
+              width: 40%;
+              border-radius: 5px;
+          }
+          body{
+              background-image: url(" https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-click-buy-gesture-pay-image_19038.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
+    </style>
+    <body>
+        <h1 style="color:Black;">Payment</h1>
+        <div class="checkout">
+            <table width=700px align="center">
+                <tr>
+                    <td class="billing">
+        <!--   <div class="billing">      --> 
+            <form action="payments.jsp" method ="post">
+                
+                <h3>SHIFTING ADDRESS</h3><br><br><br>
+               
+                <label for="name"><i class="fa fa-user"></i> Full Name</label>
+                <input class="card" type="text" name="name" id="name"><br><br>
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" >
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city">
+                <label for="zip">Pincode</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+                
+                <input type="checkbox" nname="sameadr" >
+                <label for="sameadr" >Shipping address is same as Billing address.</label><br><br>
+    
+           <br><center> <img src="h1.jpg" alt="Paytm" width="200" height="200"></center><br> <br>
+            <input type="checkbox" nname="sameadr" >
+            <label for="cod">Cash On Delivery</label><br><br>
+            <center><a href="success.html"><button>PAY</button></a></center>
+
+        </form>
+   <!-- </div>   -->
+    </td>
+    </tr>
+    </table>
+</div>
+<br>
+        <h4><center><a href="index.html"><button name="button" type="button">Home</button></a></center></h4>
+<h4><center><a href="mainproject.html"><button name="button" type="button">MainProject</button></a></center></h4>
+    </body>
+</html>

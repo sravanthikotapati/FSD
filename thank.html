@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Online Gift Shop</title>
+    <style>
+        .product {
+            margin-bottom: 20px;
+        }
+        
+        .product h2 {
+            margin-bottom: 5px;
+        }
+        
+        .product p {
+            margin-top: 0;
+        }
+        
+        .add-to-cart {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+        
+        .cart {
+            margin-top: 20px;
+        }
+        
+        .cart table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .cart th,
+        .cart td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .cart th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Online Gift Shop</h1>
+    <div class="container-fluid" style="overflow-x: hidden;">
+    <div class="row">
+    <div class="product">
+        <h2>Product 1</h2>
+        <p>Price: $500</p>
+        <button class="add-to-cart" onclick="addToCart('Product 1', 500)">Buy Now</button>
+    </div>
+    </div>
+    
+    <div class="container-fluid" style="overflow-x: hidden;">
+    <div class="product">
+        <h2>Product 2</h2>
+        <p>Price: $450</p>
+        <button class="add-to-cart" onclick="addToCart('Product 2', 450)">Buy Now</button>
+    </div>
+    </div>
+   </div>
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" align="right">
+                        <strong>Total:</strong> $<span id="cartTotal">0</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+   <center><a href="payment.html"><button>BUY</button></a></center>
+
+    <script>
+        var cartItems = [];
+        var cartTotal = 0;
+        
+        function addToCart(productName, productPrice) {
+            // Create a new cart item object
+            var cartItem = {
+                name: productName,
+                price: productPrice
+            };
+            
+            // Add the item to the cart
+            cartItems.push(cartItem);
+            
+            // Update the cart display
+            updateCartDisplay();
+        }
+        
+        function updateCartDisplay() {
+            // Get the cart items element
+            var cartItemsElement = document.getElementById("cartItems");
+            
+            // Clear the current items
+            cartItemsElement.innerHTML = "";
+            
+            // Update the cart items
+            cartItems.forEach(function(item) {
+                // Create a new row for the cart item
+                var row = document.createElement("tr");
+                
+                // Create cells for product name and price
+                var nameCell = document.createElement("td");
+                nameCell.textContent = item.name;
+                var priceCell = document.createElement("td");
+                priceCell.textContent = "$" + item.price;
+                
+                // Append cells to the row
+                row.appendChild(nameCell);
+                row.appendChild(priceCell);
+                
+                // Append the row to the cart items table
+                cartItemsElement.appendChild(row);
+            });
+            
+            // Update the cart total
+            updateCartTotal();
+        }
+        
+        function updateCartTotal() {
+            // Get the cart total element
+            var cartTotalElement = document.getElementById("cartTotal");
+            
+            // Calculate the total price
+            cartTotal = cartItems.reduce(function(total, item) {
+                return total + item.price;
+            }, 0);
+            
+            // Update the cart total display
+            cartTotalElement.textContent = cartTotal.toFixed(2);
+        }
+    </script>
+</body>
+</html>

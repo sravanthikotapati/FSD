@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chocolates</title>
+  <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8W9ok3roBDzpYCGuq8msXgLd0V5Cjg1RPfdH66AbAxrmIBO9ARqo4ZosA4zarrjtenWA&usqp=CAU">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+}
+.column1 {
+  float: left ;
+  width: 25%;
+  padding: 0px 10px;
+  height: 20%;
+}
+.left {
+  width: 35%;
+  overflow: hidden;
+}
+.right {
+  width: 65%;
+  overflow: hidden;
+}
+body {
+  font-family: cursive,bold;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1%;
+  text-align: center;
+  border-radius: 5%;
+  background-color: #f1f1f1;
+  overflow:hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .imgg {
+    transform: scaleY(-1);
+  }
+
+</style>
+</head>
+<body>
+<div class="row">
+
+  <div class="column left" style="background-color:white;">
+      <img src="https://images2.alphacoders.com/768/76822.jpg" width="225%" height="100%">
+      <div class="imgg">
+      <img src="https://images2.alphacoders.com/768/76822.jpg" width="225%" height="100%">
+    </div>
+  </div>
+
+  <div class="column right" style="background-color:white;">
+    <div class="row">
+  <div class="column1">
+    <div class="card">
+    <img src="https://www.tastingtable.com/img/gallery/20-chocolate-brands-ranked-worst-to-best/l-intro-1646002781.jpg" width="175%">
+      <p>&#8377;500</p>
+      <p>snickers</p>
+      <button onclick="myFunction()">Add to Cart</a>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="https://cdn.londonandpartners.com/-/media/images/london/visit/things-to-do/shopping/chocolate-shops/paul-a-young/paul-a-young-chocolate.jpg?mw=640&hash=DF9B3D6B8E23DF6031049FFC6D3CD64F1EED7481" width="175%">
+      <p>&#8377;500</p>
+      <p>Toblerone</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://assets.londonist.com/uploads/2022/02/i875/107803529_3127760240633631_4147552737773017489_n.jpg" width="135%">
+      <p>&#8377;400</p>
+      <p>Twix</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://media.timeout.com/images/116079/750/422/image.jpg" width="173%">
+      <p>&#8377;450</p>
+      <p>Kit Kat</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="column1">
+    <div class="card">
+    <img src="https://static.toiimg.com/photo/msid-80752819/80752819.jpg" width="133%">
+      <p>&#8377;300</p>
+      <p>Milky Way</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/1189/7664/t/17/assets/slideshow_1_1200x.jpg?v=177722326647864777261573817776" width="100%">
+      <p>&#8377;260</p>
+      <p>Mars</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0279/6329/3831/products/IMG_7057_1024x1024.jpg?v=1649306527" width="74%">
+      <p>&#8377;370</p>
+      <p>Kinder Chocolate</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0279/6329/3831/products/12_SECTION_BROWN_BOX_large.jpg?v=1580103165" width="100%">
+      <p>&#8377;270</p>
+      <p>Dairy Milk</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="column1">
+    <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Ft9ACV7JBbYV_1cvZ3ch-TlbcOf3P9XyTQ7Tg-ZlfUln5K9qNelyYqzBgx7QqFnOWtE&usqp=CAU" width="105%">
+      <p>&#8377;550</p>
+      <p>Toblerone</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/416/416/l432ikw0/chocolate/f/p/p/500-chocolate-24-pcs-gift-pack-chocolate-box-gift-for-birthday-original-imagf22nypwfgngj.jpeg?q=70" width="105%">
+      <p>&#8377;600</p>
+      <p>Aero</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://www.fnp.com/images/pr/l/v20201014151042/festive-theme-assorted-chocolate-box-21-pcs_1.jpg" width="105%">
+      <p>&#8377;400</p>
+      <p>Perk</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMTiFEkqxJrruC-MYgzUhzsiXBuQ32Eh0TYt-h93zTkEpgqvXRqXAWGpXDtsOunsoBn3U&usqp=CAU" width="138%">
+      <p>&#8377;500</p>
+      <p>Candy Bar</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column1">
+    <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2020/01/20/15/30/chocolate-candy-4780577_960_720.jpg" width="150%">
+      <p>&#8377;500</p>
+      <p>5star</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="https://sendflowers.pk/wp-content/uploads/2020/09/13-pc-luxury-assortment.jpg" width="100%">
+      <p>&#8377;200</p>
+      <p>Snickers</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0483/0013/0469/products/Cacao-Chocolates-Hero-4Piece-03_32bc7e4c-77be-428b-8652-06d68cfb53ba_1270x.jpg?v=1603838183" width="130%">
+      <p>&#8377;300</p>
+      <p>Silk</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0108/3736/0721/products/box_16_new_no_lid__sep_2019_grande.jpg?v=1607306512" width="95%">
+      <p>&#8377;500</p>
+      <p>Dark Chocolate</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="column1">
+    <div class="card">
+    <img src="http://cdn.shopify.com/s/files/1/0108/3736/0721/products/box_16_new_no_lid_no_white_space_1200x1200.jpg?v=1563340342" width="101%">
+      <p>&#8377;390</p>
+      <p>Topic</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="https://i.etsystatic.com/28282523/r/il/b4fa37/4247594553/il_340x270.4247594553_scmr.jpg" width="127%">
+      <p>&#8377;500</p>
+      <p>Carame</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://www.chocolatemonthclub.com/media/catalog/product/cache/e2f701569f73940bb7f5e4e6651b752c/l/e/leonidas-1.jpg" width="100%">
+      <p>&#8377;500</p>
+      <p>Lion</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/f7/f9/b4/f7f9b49b2f945c75387b8aa9b73b780b.jpg" width="100%">
+      <p>&#8377;500</p>
+      <p>Star Bar</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+</div>
+  </div>
+<script>
+function myFunction() {
+  let text = "Add to Cart";
+  if (confirm(text) == true) {
+    text = "Added to cart";
+  } else {
+    text = "Cancelled";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</div><br>
+<h4><center><a href="index.html"><button name="button" type="button">Home</button></a></center></h4>
+<h4><center><a href="mainproject.html"><button name="button" type="button">Back</button></a></center></h4>
+</body>
+</html>

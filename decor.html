@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>decor</title>
+  <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8W9ok3roBDzpYCGuq8msXgLd0V5Cjg1RPfdH66AbAxrmIBO9ARqo4ZosA4zarrjtenWA&usqp=CAU">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+}
+.column1 {
+  float: left ;
+  width: 25%;
+  padding: 0px 10px;
+  height: 20%;
+}
+.left {
+  width: 35%;
+  overflow: hidden;
+}
+.right {
+  width: 65%;
+  overflow: hidden;
+}
+body {
+  font-family: cursive,bold;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1%;
+  text-align: center;
+  border-radius: 5%;
+  background-color: #f1f1f1;
+  overflow:hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .imgg {
+    transform: scaleY(-1);
+  }
+  
+</style>
+</head>
+<body>
+<div class="row">
+
+  <div class="column left" style="background-color:white;">
+      <img src="https://images.pexels.com/photos/1099816/pexels-photo-1099816.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="242%" height="100%">
+      <div class="imgg">
+      <img src="https://images.pexels.com/photos/1099816/pexels-photo-1099816.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="242%" height="100%">
+    </div>
+  </div>
+
+  <div class="column right" style="background-color:white;">
+    <div class="row">
+  <div class="column1">
+    <div class="card">
+      <img src="https://artycraftz.com/wp-content/uploads/2022/06/08f9ca4e564511e0c3dda810ed8e8730.jpg" width="75%">
+      <p>&#8377;500</p>
+      <p>Sunlight Home</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="https://img.buzzfeed.com/buzzfeed-static/static/2019-10/29/12/asset/215b8a53f6a3/sub-buzz-723-1572351813-1.jpg" width="100%">
+      <p>&#8377;500</p>
+      <p>Home decor</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://ii1.pepperfry.com/media/catalog/product/m/e/800x880/metal-antique-gold---copper-floral-wall-art-by-malik-design-metal-antique-gold---copper-floral-wall--r8kugk.jpg" width="90%">
+      <p>&#8377;500</p>
+       <p>Beatnik</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/416/416/xif0q/showpiece-figurine/8/t/l/20-20-craft-iron-standing-peacock-tealight-sandhya-craft-36-original-imaghcavftyheszh.jpeg?q=70" width="90%">
+      <p>&#8377;500</p>
+      <p>High Style</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="column1">
+    <div class="card">
+    <img src="https://sc01.alicdn.com/kf/H47860c1769dc4f4fb2fb2264a04f0dfbO/240087606/H47860c1769dc4f4fb2fb2264a04f0dfbO.jpg_.webp" width="105%">
+      <p>&#8377;500</p>
+      <p>Golden Home</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/312/312/kykgb680/showpiece-figurine/o/t/b/7-62-10-16-jc05365-webelkart-19-original-imagarxcxyufkyf5.jpeg?q=70" width="100%">
+      <p>&#8377;500</p>
+      <p> The treasure</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://www.giftalove.com/blog/wp-content/uploads/2015/02/jgh-fdgi.jpg" width="82%">
+      <p>&#8377;500</p>
+      <p>classy cottage</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://ii1.pepperfry.com/media/catalog/product/m/e/568x625/metal-lord-ganesha-wall-art-in-copper-by-malik-design-metal-lord-ganesha-wall-art-in-copper-by-malik-3jehjq.jpg" width="90%">
+      <p>&#8377;500</p>
+      <p>Alluring Showpieces</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="column1">
+    <div class="card">
+    <img src="https://www.ebony.com/wp-content/uploads/2022/05/Karen-Jai-Home-Gold-Vase.jpg" width="105%">
+      <p>&#8377;500</p>
+      <p>Classic vases</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="https://media1.popsugar-assets.com/files/thumbor/yWvKYt2aNzuuqVYXylaAwXNzoy4/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/10/30/841/n/1922794/64ad18c55f9c656d32b542.24668826_/i/best-gifts-at-wayfair.jpg" width="105%">
+      <p>&#8377;500</p>
+      <p>Designer chimes</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/cf/c0/48/cfc048f65d46d7eee51a43206745fd8f.jpg" width="140%">
+      <p>&#8377;500</p>
+      <p>Trendy Wall</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_46/1505961/41piv1lj4bl-5dc9d8b6ce1b6.jpg" width="105%">
+      <p>&#8377;500</p>
+      <p>Classic Wall</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+
+<div class="row">
+  <div class="column1">
+    <div class="card">
+    <img src="https://i.etsystatic.com/6243915/r/il/63dbbe/4298508932/il_fullxfull.4298508932_5ws8.jpg" width="100%">
+      <p>&#8377;500</p>
+      <p>Fountains</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="https://th-i.thgim.com/public/migration_catalog/article10264432.ece/alternates/FREE_1200/04YT_KONDAPALLI5" width="150%">
+      <p>&#8377;500</p>
+      <p>Fancy wall</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://www.shutterstock.com/image-photo/thanjavur-dancing-dolls-selectively-focused-260nw-540265438.jpg" width="140%">
+      <p>&#8377;500</p>
+      <p>Gracefull Wall</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/42257/flowerful-flowery-flowerly-42257.jpeg?cs=srgb&dl=pexels-jill-wellington-42257.jpg&fm=jpg" width="65%">
+      <p>&#8377;500</p>
+      <p>Fabulous Plants</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="column1">
+    <div class="card">
+    <img src="https://m.media-amazon.com/images/I/71ERyW+r9gL._SY450_.jpg" width="101%">
+      <p>&#8377;500</p>
+      <p>Voguish Wall</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/416/416/kl175ow0/painting/b/d/j/20-largepainting-26-hd-rapid-design-original-imagy8v2hhhnvyb7.jpeg?q=70" width="100%">
+      <p>&#8377;500</p>
+      <p>Gorgeous Wall</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0276/4911/4190/products/51pTCMOM84L.jpg?v=1596036961" width="100%">
+      <p>&#8377;500</p>
+      <p>Classic Fountain</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0508/6714/2855/products/wp6129_1024x1024.jpg?v=1630069119" width="149%">
+      <p>&#8377;500</p>
+      <p>Stylish Wall</p>
+      <button onclick="myFunction()">Add to Cart</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+</div>
+  </div>
+
+<script>
+function myFunction() {
+  let text = "Add to Cart";
+  if (confirm(text) == true) {
+    text = "Added to cart";
+  } else {
+    text = "Cancelled";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</div><br>
+<h4><center><a href="index.html"><button name="button" type="button">Home</button></a></center></h4>
+<h4><center><a href="mainproject.html"><button name="button" type="button">MainProject</button></a></center></h4>
+</body>
+</html>
